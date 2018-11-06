@@ -13,3 +13,28 @@ class post(models.Model):
 
 	def __str__(self):
 		return self.title
+
+
+
+
+class login(models.Model):
+	username = models.CharField(max_length=30)
+	password = models.CharField(max_length=50)
+	# user_id = models.IntegerField()
+
+
+	def __str__(self):
+		return self.username
+
+
+
+class ODI(models.Model):
+	FirstName = models.CharField(max_length=20)
+	LastName = models.CharField(max_length=20)
+	matches = models.IntegerField()
+
+
+	def __str__(self):
+		return self.FirstName
+
+
