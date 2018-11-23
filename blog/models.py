@@ -20,7 +20,7 @@ class post(models.Model):
 class login(models.Model):
 	username = models.CharField(max_length=30)
 	password = models.CharField(max_length=50)
-	# user_id = models.IntegerField()
+	user_id = models.IntegerField()
 
 
 	def __str__(self):
@@ -34,7 +34,11 @@ class ODI(models.Model):
 	matches = models.IntegerField()
 
 
+
 	def __str__(self):
 		return self.FirstName
+
+
+
 
 
